@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  jogador_id: 
+  mapa_id: 
+  pontuacao: 1.5
+
+two:
+  jogador_id: 
+  mapa_id: 
+  pontuacao: 1.5

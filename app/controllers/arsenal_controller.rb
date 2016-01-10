@@ -1,0 +1,2 @@
+class ArsenalController < ApplicationController
+end

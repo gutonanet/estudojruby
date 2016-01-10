@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  login: MyString
+  permite_audio: false
+  permite_musica: false
+  moedas: 1
+
+two:
+  login: MyString
+  permite_audio: false
+  permite_musica: false
+  moedas: 1

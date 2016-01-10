@@ -1,0 +1,2 @@
+module ArsenalHelper
+end

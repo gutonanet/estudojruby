@@ -1,0 +1,6 @@
+<h1>Magic Hunt</h1>
+<ul>
+<% for menu in @menu %>
+  <li><a href="/menu/<%= menu.id %>"><%= menu.descricao %></a></li>
+<% end %>
+</ul>

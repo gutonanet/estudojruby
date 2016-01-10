@@ -1,0 +1,2 @@
+class PontuacaoController < ApplicationController
+end
