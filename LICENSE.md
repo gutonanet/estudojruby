@@ -1,0 +1,1 @@
+Liberado para qualquer uso
