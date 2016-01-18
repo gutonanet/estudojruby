@@ -927,3 +927,16 @@ Migrating to RemoveSenhaFromJogadors (20151220221657)
   [1m[35m (0.0ms)[0m  SELECT DATABASE() as db
   [1m[36m (0.0ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table' ,fk.referenced_column_name as 'primary_key' ,fk.column_name as 'column' ,fk.constraint_name as 'name' FROM information_schema.key_column_usage fk WHERE fk.referenced_column_name is not null AND fk.table_schema = 'mystichunt_development' AND fk.table_name = 'pontuacaos'[0m
   [1m[35m (0.0ms)[0m  SHOW CREATE TABLE `pontuacaos`
+  [1m[36m (168.0ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (322.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36mActiveRecord::SchemaMigration Load (15.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateMenus (20151217120650)
+  [1m[35m (31.0ms)[0m  CREATE TABLE `menus` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `menu_id` int(11), `descricao` varchar(255), `link` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36mActiveRecord::SchemaMigration Load (16.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateMenus (20151217120650)
+  [1m[35m (32.0ms)[0m  CREATE TABLE `menus` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `menu_id` int(11), `descricao` varchar(255), `link` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (98.0ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (163.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateMenus (20151217120650)
+  [1m[35m (51.0ms)[0m  CREATE TABLE `menus` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `menu_id` int(11), `descricao` varchar(255), `link` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB

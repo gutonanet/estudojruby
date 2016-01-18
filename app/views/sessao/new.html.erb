@@ -1,2 +1,14 @@
-<h1>Sessao#new</h1>
-<p>Find me in app/views/sessao/new.html.erb</p>
+<%for_form :sessao, url:sign_in_path do |f|%>
+	<div class="field">
+		<%=f.label :email%><br/>
+		<%=f.email_field :email, autofocus: true%>
+	</div>
+	<div class="field">
+		<%=f.label :password%><br/>
+		<%=f.password_field :password, autocomplete: "off"%>
+	</div>
+	<div class= "actions">
+		<%=f.submit "Login"%>
+	</div>
+	<p>Novo Usuário: <%= link_to "Sing up now", new_jogador_path%></p>
+<% end %>
