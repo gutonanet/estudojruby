@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get 'sign_in' => 'sessao#new' 
   post 'sign_in' => 'sessao#create' 
   delete 'sign_out' => 'sessao#destroy'
-
+  root 'sessao#new'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
