@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :jogadors
   resources :menu
   resources :jogador
   get 'sign_in' => 'sessao#new' 

@@ -1,4 +1,4 @@
-<%for_form :sessao, url:sign_in_path do |f|%>
+<%= form_for :session, url:sign_in_path do |f|%>
 	<div class="field">
 		<%=f.label :email%><br/>
 		<%=f.email_field :email, autofocus: true%>
